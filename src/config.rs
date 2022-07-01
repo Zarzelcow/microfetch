@@ -5,16 +5,16 @@ pub(crate) fn get_print_config() -> Vec<String> {
         format!("{}@{}", get_user(), get_hostname()),
         "==========".to_string(),
         format!(" Distro: {}", get_distro()),
-        format!("缾 WM: {}", get_wm()),
+        // format!("缾 WM: {}", get_wm()),
         format!(" TERM: {}", get_terminal()),
         format!(" SHELL: {}", get_shell()),
-        format!(" PACKAGES: {} (pacman) {} (flatpak)", get_pacman_packages(), get_flatpak_packages()),
+        // format!(" PACKAGES: {} (pacman) {} (flatpak)", get_pacman_packages(), get_flatpak_packages()),
         format!(" UPTIME: {}", get_uptime()),
         format!("﬙ CPU: {}", get_cpu()),
         format!(" RAM: {}", get_memory()),
         format!(" KERNEL: {}", get_kernel()),
-        format!(" GPU 1: {}", get_gpu(0)),
-        format!(" GPU 2: {}", get_gpu(1))
+        // format!(" GPU 1: {}", get_gpu(0)),
+        // format!(" GPU 2: {}", get_gpu(1))
     ];
 }
 

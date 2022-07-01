@@ -82,7 +82,7 @@ fn get_user() -> String {
 }
 
 fn get_terminal() -> String {
-    env::var("TERM").expect("Failed to get terminal")
+    env::var("TERM").unwrap_or_else(|_| "UNKNOWN".to_string())
 }
 
 fn get_memory() -> String {
